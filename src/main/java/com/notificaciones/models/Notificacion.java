@@ -17,9 +17,11 @@ public class Notificacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_notificacion;
+    private long id_notificacion;
 
-    private String detalles_notificacion;
+    private Long id_user;
+
+    private String descripcion_notificacion;
 
     private Date fecha_hora_notificacion;
 }
