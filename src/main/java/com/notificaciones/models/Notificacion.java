@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
 import java.util.Date;
 
 @Data
@@ -19,9 +18,7 @@ public class Notificacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_notificacion;
 
-    private Long id_user;
-
     private String descripcion_notificacion;
 
-    private Date fecha_hora_notificacion;
+    private Date fecha_cita ;
 }
